@@ -1,86 +1,87 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      color: #333;
+    }
 
-        <!--==================== UNICONS ====================-->
-        
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="">
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-        <title>Responsive Portfolio Website</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            
-        </header>
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #4CAF50;
+      margin-bottom: 20px;
+    }
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
-            </section>
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                
-            </section>
+    p {
+      font-size: 1.1em;
+      color: #555;
+    }
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
+    .social-links a {
+      margin: 10px;
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
 
-            </section>
+    .social-links a:hover {
+      color: #2e7d32;
+    }
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #888;
+    }
 
-            </section>
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://i.pravatar.cc/300" alt="Profile Picture" class="profile-pic"/>
+    <h1>Your Name</h1>
+    <p>Hello! I’m a passionate developer/designer/content creator/etc. I love building things on the web and sharing my knowledge.</p>
+    
+    <div class="social-links">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+      <a href="mailto:your@email.com">Email Me</a>
+    </div>
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
-            </section>
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                
-            </section>
-
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
-
-            </section>
-
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-         
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        
-
-        <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
-
-        <!--==================== MAIN JS ====================-->
-        <script src=""></script>
-    </body>
+    <footer>
+      &copy; 2025 Your Name. All rights reserved.
+    </footer>
+  </div>
+</body>
 </html>
