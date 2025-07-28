@@ -7,6 +7,16 @@
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+
+        /* Responsive styles for smaller screens */
+        @media (max-width: 768px) {
+            .card {
+                flex-direction: column;
+                padding: 15px;
+                font-size: 16px;
+            }
+        }
+        
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
         
         body {
@@ -50,6 +60,7 @@
         .lechon-cut img {
             transition: transform 0.4s ease;
         }
+        
     </style>
 </head>
 <body class="bg-gray-50">
