@@ -529,6 +529,26 @@
             });
             </script>
 
+         <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const menuButton = document.getElementById('mobile-menu-button');
+              const mobileMenu = document.getElementById('mobile-menu');
+
+              // Toggle mobile menu visibility
+              menuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+              });
+
+              // Hide menu when a link is clicked
+              const menuLinks = mobileMenu.querySelectorAll('a');
+                menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                  mobileMenu.classList.add('hidden');
+                });
+              });
+            });
+        </script>
+
 
 
 
