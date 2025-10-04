@@ -8,7 +8,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
 
-        
+     /* Apply consistent padding for mobile screens only */
+         @media (max-width: 767px) {
+            body,
+             section,
+             nav,
+            .container,
+             .cover,
+             .lechon-cut,
+             .testimonial-card,
+             .menu-item {
+             padding-left: 1rem;
+             padding-right: 1rem;
+        }
+
+    /* Optional: add some vertical space too */
+    section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
         /* Hide by default */
         .hamburger {
             display: none;
