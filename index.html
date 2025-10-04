@@ -506,22 +506,29 @@
             </script>
 
             <script>
-                const menuButton = document.getElementById('mobile-menu-button');
-                const mobileMenu = document.getElementById('mobile-menu');
-                const menuLinks = mobileMenu.querySelectorAll('a');
+              const menuButton = document.getElementById('mobile-menu-button');
+              const mobileMenu = document.getElementById('mobile-menu');
+              const menuIcon = document.getElementById('menu-icon');
+              const closeIcon = document.getElementById('close-icon');
+              const menuLinks = mobileMenu.querySelectorAll('a');
 
-            // Toggle menu visibility when hamburger icon is clicked
-                menuButton.addEventListener('click', () => {
+          // Toggle menu open/close
+              menuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
-                });
+                menuIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+              });
 
-            // Hide menu when a link is clicked
-                menuLinks.forEach(link => {
+          // Hide dropdown when a link is clicked
+              menuLinks.forEach(link => {
                 link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
                 });
             });
             </script>
+
 
 
 
